@@ -1,0 +1,21 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
+ * Base structure
+ */
+ .navbar {
+   position: relative;
+   min-height: 30px;
+   margin-bottom: 39px;
+   border: 10px solid transparent;
+ }
+
+body {
+  height: 100%;
+  background-color: #333;
+  color: #47476b;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
