@@ -3,22 +3,23 @@
     <div class="navbar-header">Welcome to the IdeaBox App
     </div>
   </div><!-- /.container-fluid -->
+  <button class="signin-button" onclick="location.href='/users/new'"> Sign Up</button>
 </nav>
 
-<div class="form-login">
+<div id="form-login" class="form-login">
   <%= form_for :session do |f| %>
-    Username <br>
-      <div class="form-login-input">
+    Username
+      <div id="form-login-input" class="form-login-input">
         <%= f.text_field :username %><br>
       </div>
 
-    Password <br>
-      <div class="form-login-input">
+    Password
+      <div id="form-login-input" class="form-login-input">
       <%= f.password_field :password %> <br>
       </div>
 
-    <div class="form-login-submit"><br>
-         <%= f.submit %>
+    <div id="form-login-submit" class="form-login-submit"><br>
+         <%= f.submit "Login" %>
     </div>
 
   <% end %>

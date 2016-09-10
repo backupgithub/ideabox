@@ -3,35 +3,46 @@
 @import "bootstrap";
 
 /*
- * Base structure
- */
+* Base structure
+*/
 
 .form-login {
   color: white;
   font-size: 30px;
-}
-
-.form-login-submit {
-  color: black;
+  font-weight: bolder;
 }
 
 .form-login-input {
   color: black;
 }
 
- .container-fluid {
-   font-size: 40px;
-   width: 600px;
- }
- .navbar {
-   position: relative;
-   min-height:40px;
-   margin-bottom: 39px;
-   border: 10px solid transparent;
- }
+.form-login-submit {
+  color: black;
+}
 
- html {
-   align-items: center;
+.signin-button {
+  font-size: 20px;
+  float: right;
+  font-weight: bold;
+}
+
+.new-user {
+  color: white;
+}
+
+.container-fluid {
+  font-size: 40px;
+  width: 600px;
+}
+.navbar {
+  position: relative;
+  min-height:40px;
+  margin-bottom: 39px;
+  border: 10px solid transparent;
+}
+
+html {
+  align-items: center;
   font-size: 10px;
   -webkit-tap-highlight-color: transparent;
 }

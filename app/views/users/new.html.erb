@@ -1,0 +1,29 @@
+<div class="new-user">
+<h1>Welcome to Idea Box</h1><br>
+<h3>Please go ahead and enter your information below:</h3><br>
+</div>
+
+
+<div class="form-login">
+  <%= form_for @user do |f| %>
+  First Name
+  <div class="form-login-input">
+    <%= f.text_field :name %><br>
+  </div>
+
+  Username
+  <div class="form-login-input">
+    <%= f.text_field :username %><br>
+  </div>
+
+  Password
+  <div class="form-login-input">
+    <%= f.password_field :password %> <br>
+  </div>
+
+  <div class="form-login-submit"><br>
+    <%= f.submit "Create User" %>
+  </div>
+
+  <% end %>
+</div>
