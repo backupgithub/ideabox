@@ -6,6 +6,26 @@
 * Base structure
 */
 
+html {
+  align-items: center;
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  text-align: center;
+  height: 100%;
+  background-color: #333;
+  color: #47476b;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/*
+* Login Page
+*/
+
+// form styling
+
 .form-login {
   color: white;
   font-size: 30px;
@@ -20,15 +40,19 @@
   color: black;
 }
 
+// sigin button at home page
 .signin-button {
   font-size: 20px;
   float: right;
   font-weight: bold;
 }
 
+// sign in button at home page
 .new-user {
   color: white;
 }
+
+// nav bar login page
 
 .container-fluid {
   font-size: 40px;
@@ -41,16 +65,12 @@
   border: 10px solid transparent;
 }
 
-html {
-  align-items: center;
-  font-size: 10px;
-  -webkit-tap-highlight-color: transparent;
-}
+/*
+* User Page
+*/
 
-body {
-  text-align: center;
-  height: 100%;
-  background-color: #333;
-  color: #47476b;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+// table formatting
+
+.table-ideas {
+  color: white;
 }

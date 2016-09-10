@@ -1,5 +1,40 @@
-<div class="user-show-page">
-  <div class="navbar navbar-default">
-    <h1>Welcome, <%= current_user.name %></h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-user-show-page"> Welcome <%= current_user.name %>
+    </div>
   </div>
-</div>
+  <div class="signin-button">
+    <%= button_to "Logout", current_user, method: :delete %>
+  </div>
+</nav>
+
+
+  <div class="container table-ideas">
+    <h2>Ideas Table</h2>
+    <p>Here are all the ideas you have submitted:</p>
+    <table class="table table-bordered"><br>
+      <thead>
+        <tr>
+            <th style="text-align:center">Title</th>
+            <th style="text-align:center">Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

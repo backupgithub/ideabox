@@ -14,17 +14,19 @@ class UsersController < ApplicationController
     end
   end
 
-
   def show
     current_user
   end
 
+  def destroy
+    session.clear
+    redirect_to login_path
+  end
 
   private
 
   def user_params
     params.require(:user).permit(:name, :username, :password)
   end
-
-
+  
 end
