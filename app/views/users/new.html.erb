@@ -16,14 +16,17 @@
     <%= f.text_field :username %><br>
   </div>
 
-  Password
+  Password (min. 5 chars)
   <div class="form-login-input">
     <%= f.password_field :password %> <br>
   </div>
 
+  <%=  flash.now[:invalid_information] %>
+
   <div class="form-login-submit"><br>
     <%= f.submit "Create User" %>
   </div>
+
 
   <% end %>
 </div>

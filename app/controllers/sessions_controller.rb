@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to user
     else
-      flash.now[:error] = "Invalid Password, please try again"
+      flash.now[:error] = "Invalid Password or Username, please try again"
       render :new
     end
   end

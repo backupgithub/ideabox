@@ -6,7 +6,9 @@
   <button class="signin-button" onclick="location.href='/users/new'"> Sign Up</button>
 </nav>
 
+
 <div id="form-login" class="form-login">
+
   <%= form_for :session do |f| %>
     Username
       <div id="form-login-input" class="form-login-input">
@@ -17,6 +19,8 @@
       <div id="form-login-input" class="form-login-input">
       <%= f.password_field :password %> <br>
       </div>
+
+      <%= flash.now[:error] %>
 
     <div id="form-login-submit" class="form-login-submit"><br>
          <%= f.submit "Login" %>
