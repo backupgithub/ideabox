@@ -7,4 +7,8 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create, :show, :destroy]
 
+  namespace :user do
+    resources :ideas, only: [:new, :create, :show]
+  end
+
 end

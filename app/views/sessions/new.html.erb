@@ -3,7 +3,8 @@
     <div class="navbar-header">Welcome to the IdeaBox App
     </div>
   </div><!-- /.container-fluid -->
-  <button class="signin-button" onclick="location.href='/users/new'"> Sign Up</button>
+  <%= button_to "Sign Up", new_user_path, :class => "btn pull-right btn-primary btn-lg signup-button", :method => :get  %>
+
 </nav>
 
 

@@ -1,13 +1,14 @@
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-user-show-page"> Welcome <%= current_user.name %>
-    </div>
-  </div>
-  <div class="signin-button">
-    <%= button_to "Logout", current_user, method: :delete %>
-  </div>
-</nav>
 
+  <div class="container-fluid">
+    <div class="navbar-user-show-page"> Welcome <%= current_user.name %></div>
+  </div>
+
+      <%= button_to "New Idea", new_user_idea_path, :class => "btn pull-left btn-primary btn-lg newidea-button", :method => :get  %>
+
+      <%= button_to "Logout", current_user, class: "btn pull-right btn-primary btn-lg signout-button", method: :delete %>
+
+</nav>
 
   <div class="container table-ideas">
     <h2>Ideas Table</h2>
