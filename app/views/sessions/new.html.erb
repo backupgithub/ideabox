@@ -5,5 +5,21 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<div class="form-login">
+  <%= form_for :session do |f| %>
+    Username <br>
+      <div class="form-login-input">
+        <%= f.text_field :username %><br>
+      </div>
 
+    Password <br>
+      <div class="form-login-input">
+      <%= f.password_field :password %> <br>
+      </div>
+
+    <div class="form-login-submit"><br>
+         <%= f.submit %>
+    </div>
+
+  <% end %>
 </div>
