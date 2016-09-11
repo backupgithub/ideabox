@@ -85,3 +85,37 @@ body {
   background: #333;
   font-weight: bolder;
 }
+
+/*
+* Idea Page
+*/
+
+// header
+
+.navbar-header-idea {
+  align-items: center;
+}
+
+// Input fields
+
+.form-idea-input{
+  color: black;
+}
+
+textarea {
+    -webkit-appearance: textarea;
+    background-color: white;
+    -webkit-user-select: text;
+    flex-direction: column;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-width: 10px;
+    border-style:solid;
+    border-color: lightgray;
+}
+
+// formatting my idea page button submit
+
+.form-idea-submit {
+  color: black;
+}

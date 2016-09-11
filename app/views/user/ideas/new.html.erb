@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header-idea"> Create your Idea
+    </div>
+  </div>
+</nav>
+
+<div class="form-login">
+<%= form_for [current_user, @idea] do |f| %>
+
+  Title
+    <div class="form-idea-input">
+      <%= f.text_field :title %><br>
+    </div> <br>
+
+    Description
+      <div class="form-idea-input">
+        <%= f.text_area :description %><br>
+      </div> <br>
+
+      <div class="form-idea-submit"><br>
+      <%= f.submit %>
+      </div>
+
+<% end %>
+</div>
