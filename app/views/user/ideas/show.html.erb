@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header-idea"> Idea Details </div>
+  </div>
+  <%= button_to "Home Page", current_user, :class => "btn pull-left btn-primary btn-lg newidea-button", :method => :get  %>
+</nav>
+
+
+<div class="container table-ideas">
+  <table class="table table-bordered"><br>
+    <thead>
+      <tr>
+        <th style="text-align:center">Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> <%= @idea.title %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="container table-ideas">
+  <table class="table table-bordered"><br>
+    <thead>
+      <tr>
+        <th style="text-align:center">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> <%= @idea.description %></td>
+      </tr>
+    </tbody>
+  </table>
+  <%= button_to "Edit Idea", edit_user_idea_path, :class => "btn pull-left btn-primary btn-lg newidea-button", :method => :get  %>
+  <%= button_to "Delete Idea", user_idea_path(@idea), :class => "btn pull-right btn-primary btn-lg newidea-button", confirm: "Are you sure?", method: :delete%>
+
+</div>

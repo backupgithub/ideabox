@@ -15,7 +15,7 @@
     <p>Here are all the ideas you have submitted:</p>
     <table class="table table-bordered"><br>
       <thead>
-        <tr>
+          <tr>
             <th style="text-align:center">Title</th>
             <th style="text-align:center">Details</th>
         </tr>
@@ -24,12 +24,9 @@
         <% current_user.ideas.each do |idea| %>
         <tr>
           <td> <%= idea.title %></td>
-          <td><%= idea.description %></td>
+          <td> <%= link_to "Details", user_idea_path(idea) %></td>
         </tr>
       </tbody>
       <% end %>
     </table>
   </div>
-
-</body>
-</html>
