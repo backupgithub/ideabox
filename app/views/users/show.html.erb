@@ -16,24 +16,20 @@
     <table class="table table-bordered"><br>
       <thead>
         <tr>
+          <th style="text-align:center">#</th>
             <th style="text-align:center">Title</th>
             <th style="text-align:center">Details</th>
         </tr>
       </thead>
       <tbody>
+        <% current_user.ideas.each do |idea| %>
         <tr>
-          <td>John</td>
-          <td>john@example.com</td>
-        </tr>
-        <tr>
-          <td>Mary</td>
-          <td>mary@example.com</td>
-        </tr>
-        <tr>
-          <td>July</td>
-          <td>july@example.com</td>
+          <td> <%= idea.id %></td>
+          <td> <%= idea.title %></td>
+          <td><%= idea.description %></td>
         </tr>
       </tbody>
+      <% end %>
     </table>
   </div>
 

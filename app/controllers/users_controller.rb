@@ -17,6 +17,7 @@ class UsersController < ApplicationController
 
   def show
     current_user
+    @ideas = current_user.ideas
   end
 
   def destroy
