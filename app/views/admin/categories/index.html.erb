@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header-idea"> Admin Restrict Page</div>
+  </div>
+</nav>
+
+<% if @categories %>
+<ul>
+  <% @categories.each do |category| %>
+    <li><%= category.name %></li>
+    <ul>
+      <li><%= link_to "Edit #{category.name} Category", edit_category_path(cat) %></li>
+      <li><%= link_to "Delete #{category.name} Category", category_path(cat), method: :delete, data: {confirm: "Are you sure?" } %></li>
+      <ul>
+        <li><%= link_to "Create #{category.name} Idea", new_category_idea_path(cat) %></li>
+      </ul>
+    </ul>
+  <% end %>
+</ul>
+<% else %>
+  <h2>No categories have been defined.</h2>
+<% end %>
